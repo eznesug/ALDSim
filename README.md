@@ -11,7 +11,7 @@ simulations were performed with the authors' own multiscale ALD simulation
 platform **ALDSim**, built on the open-source
 [SPPARKS](https://spparks.sandia.gov/) parallel kMC framework. ALDSim has been
 registered with the China Copyright Protection Center (registration no.
-2026SR0465717).
+2026SR0404643).
 
 ## Contents
 
@@ -19,7 +19,10 @@ registered with the China Copyright Protection Center (registration no.
   ZnS chemical model (application style `ald/zns`), together with the
   serial/MPI build scripts.
 - `examples/ald-ZnS/` — input scripts (`in_*.ald`) and initial site data
-  (`data.ald`) for each deposition temperature (300–500 K).
+  (`data.ald`) for each deposition temperature (300–500 K), together with the
+  serial/MPI SLURM job scripts.
+- `aldsim-python/` — ALDSim Python desktop edition: a PyQt5-based graphical
+  interface with 2D/3D visualization for lattice-based ALD kMC simulations.
 
 ## Build
 

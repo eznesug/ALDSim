@@ -5,8 +5,7 @@ This folder contains the source code and input files used to generate the
 kinetic Monte Carlo (kMC) trajectories reported in the manuscript. The kMC
 simulations were performed with the authors' own software ALDSim2.0, which is
 built on the open-source SPPARKS parallel kMC framework. A software-copyright
-registration has been filed for ALDSim2.0 (registration no. 2026SR0465717; please
-insert the full number when available).
+registration has been filed for ALDSim V1.0 (registration no. 2026SR0404643).
 
 Contents
 --------
