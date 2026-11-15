@@ -1,28 +1,32 @@
-# Kinetic Monte Carlo Study of Atomic Layer Deposition of Zinc Sulfide
+# ALDSim
 
-Supplementary source code and input files for the manuscript
+**原子层沉积多尺度模拟软件 (ALDSim) V1.0** — a lattice-based kinetic
+Monte Carlo (KMC) simulation platform for atomic layer deposition (ALD), built
+on the open-source [SPPARKS](https://spparks.sandia.gov/) parallel kMC
+framework. ALDSim is registered with the China Copyright Protection Center
+(registration no. **2026SR0404643**, copyright holder: Wenzhou University).
 
-> **Kinetic Monte Carlo Study of Atomic Layer Deposition Process of Zinc Sulfide**
-> Senze Gu, Chengyu Yin, Junyang Hong, Yongjian Weng, Chunyang Zhu, Lina Xu, Hongping Xiao, Guoyong Fang*
+This repository contains the authors' own ALDSim code and input files. ALDSim
+is the broader multiscale ALD simulation platform; the **ZnS DEZ/H₂S ALD
+model** shipped here is one demonstration application of that platform.
 
-This repository contains the source code and input files used to generate the
-kinetic Monte Carlo (kMC) trajectories reported in the above manuscript. The
-simulations were performed with the authors' own multiscale ALD simulation
-platform **ALDSim**, built on the open-source
-[SPPARKS](https://spparks.sandia.gov/) parallel kMC framework. ALDSim has been
-registered with the China Copyright Protection Center (registration no.
-2026SR0404643).
-
-## Contents
+## Components
 
 - `src/` — modified SPPARKS application and diagnostic files implementing the
   ZnS chemical model (application style `ald/zns`), together with the
   serial/MPI build scripts.
-- `examples/ald-ZnS/` — input scripts (`in_*.ald`) and initial site data
-  (`data.ald`) for each deposition temperature (300–500 K), together with the
-  serial/MPI SLURM job scripts.
 - `aldsim-python/` — ALDSim Python desktop edition: a PyQt5-based graphical
   interface with 2D/3D visualization for lattice-based ALD kMC simulations.
+- `examples/ald-ZnS/` — input scripts (`in_*.ald`) and initial site data
+  (`data.ald`) for each ZnS deposition temperature (300–500 K), together with
+  the serial/MPI SLURM job scripts.
+
+## Associated manuscript
+
+The ZnS demonstration system supports the following manuscript:
+
+> **Kinetic Monte Carlo Study of Atomic Layer Deposition Process of Zinc Sulfide**
+> Senze Gu, Chengyu Yin, Junyang Hong, Yongjian Weng, Chunyang Zhu, Lina Xu, Hongping Xiao, Guoyong Fang*
 
 ## Build
 
